@@ -11,8 +11,8 @@
          //def String SEPERATOR = " "
         // def String CLEAN = "clean"
         // def String INSTALL = "install"
-      if( ${CLEAN} == "clean")
-        if (${INSTALL} == "install")
+      if("clean" == ${CLEAN})
+        if ("install" ==${INSTALL})
           sh "/opt/apache-maven-3.6.3/bin/mvn ${CLEAN} ${INSTALL}"
         else if (${PACKAGE} == "package")
           sh "/opt/apache-maven-3.6.3/bin/mvn ${CLEAN} ${PACKAGE}"
