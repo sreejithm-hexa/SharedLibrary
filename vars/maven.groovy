@@ -6,12 +6,8 @@
     public static final String INSTALL = "install"
     public static final String DEPLOY = "deploy" */
 
-    def call(String CLEAN, String INSTALL) {
-         //def String MVN = "mvn"
-         //def String SEPERATOR = " "
-        // def String CLEAN = "clean"
-        // def String INSTALL = "install"
-      if("clean" == ${CLEAN})
+    def call(String CLEAN = "clean", String INSTALL) {
+    
         if ("install" ==${INSTALL})
           sh "/opt/apache-maven-3.6.3/bin/mvn ${CLEAN} ${INSTALL}"
         break
