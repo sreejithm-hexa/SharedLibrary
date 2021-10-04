@@ -14,11 +14,10 @@
       if("clean" == ${CLEAN})
         if ("install" ==${INSTALL})
           sh "/opt/apache-maven-3.6.3/bin/mvn ${CLEAN} ${INSTALL}"
-        //else if (${PACKAGE} == "package")
-         // sh "/opt/apache-maven-3.6.3/bin/mvn ${CLEAN} ${PACKAGE}"
-      else
-          return "error command"
+        break
 }
+
+return "error"
 //-f /var/lib/jenkins/workspace/PetClinic
 //sh "mvn ${options}"
 //sh "/opt/apache-maven-3.6.3/bin/mvn ${options}"
