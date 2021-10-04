@@ -6,7 +6,7 @@
     public static final String INSTALL = "install"
     public static final String DEPLOY = "deploy" */
 
-    def call(String CLEAN = "clean", String INSTALL) {
+    def info(String CLEAN = "clean", String INSTALL) {
     
         if ("install" ==${INSTALL})
           sh "/opt/apache-maven-3.6.3/bin/mvn CLEAN ${INSTALL}"
