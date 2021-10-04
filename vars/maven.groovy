@@ -9,7 +9,7 @@
     def call(String CLEAN = "clean", String INSTALL) {
     
         if ("install" ==${INSTALL})
-          sh "/opt/apache-maven-3.6.3/bin/mvn ${CLEAN} ${INSTALL}"
+          sh "/opt/apache-maven-3.6.3/bin/mvn CLEAN ${INSTALL}"
         break
 }
 
