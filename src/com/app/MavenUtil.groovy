@@ -3,7 +3,7 @@ class MavenUtil implements Serializable {
   def steps
   MavenUtil(steps) {this.steps = steps}
   def mvn(args) {
-    steps.sh "${steps.tool 'MAVEN_HOME'}/bin/mvn -o ${args}"
+    steps.sh "${steps.tool 'maven'}/bin/mvn -o ${args}"
   }
 }
 
