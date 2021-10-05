@@ -1,4 +1,4 @@
-package com
+package com.app
 class MavenUtil implements Serializable {
   def steps
   MavenUtil(steps) {this.steps = steps}
